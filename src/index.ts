@@ -7,8 +7,6 @@ import "./controllers/RootController";
 
 const app = express();
 
-// Test
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieSession({ keys: ["laskdjf"] }));
 app.use(AppRouter.getInstance());
